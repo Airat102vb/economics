@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <soap:Body>
+        <MainInfoXMLResponse xmlns="http://web.cbr.ru/">
+            <MainInfoXMLResult>
+                <RegData xmlns="">
+                    <keyRate Title="Ключевая ставка" Date="28.10.2024">21.00</keyRate>
+                    <Inflation Title="Инфляция" Date="01.10.2024">8.54</Inflation>
+                    <stavka_ref Title="Ставка рефинансирования" Date="28.10.2024">21.00</stavka_ref>
+                    <GoldBaks Title="Международные резервы" Date="08.11.2024">620.8</GoldBaks>
+                </RegData>
+            </MainInfoXMLResult>
+        </MainInfoXMLResponse>
+    </soap:Body>
+</soap:Envelope>

@@ -1,13 +1,12 @@
 package economics.bot;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.telegram.telegrambots.longpolling.TelegramBotsLongPollingApplication;
+import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
-@SpringBootApplication
 public class BotApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(BotApplication.class, args);
+	public static void main(String[] args) throws TelegramApiException {
+		TelegramBotsLongPollingApplication pollingApplication = new TelegramBotsLongPollingApplication();
+		pollingApplication.registerBot(System.getenv("TBOT"), new EconomicsBot(System.getenv("TBOT")));
 	}
-
 }
